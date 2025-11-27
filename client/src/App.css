@@ -1,0 +1,369 @@
+.app {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    flex-direction: row;
+  }
+
+  .list-section {
+    flex: 1;
+  }
+
+  .card {
+    height: fit-content;
+  }
+}
+
+.card {
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+input[type='text'],
+textarea,
+select {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #2f2f2f;
+  background: #121212;
+  color: #f5f5f5;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: #78ebff;
+  color: #000;
+  font-weight: 600;
+  margin: 0px 10px;
+}
+
+/* Classy Button Style - White Border, No Radius, White Text */
+.classy-button {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+  font-size: 14px !important;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0px 20px;
+  min-width: 100px;
+}
+
+.createButton {
+  margin-left: 0px;
+}
+
+.classy-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  color: #fff;
+}
+
+.classy-button:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.classy-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.classy-button:disabled:hover {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.whiteText {
+  color: #fff !important;
+}
+
+button.secondary {
+  background: #2d2d2d;
+}
+
+button.danger {
+  background: #d64545;
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.alert.success {
+  background: rgba(76, 175, 80, 0.2);
+  color: #9be49f;
+}
+
+.alert.danger {
+  background: rgba(244, 67, 54, 0.2);
+  color: #f28b82;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #2a2a2a;
+  text-align: left;
+}
+
+th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.badge {
+  padding: 0.5rem 0.9rem;
+  border-radius: 15px;
+  background: #2d2d2d;
+  font-size: 0.8rem;
+}
+
+.badge.success {
+  background: rgba(76, 175, 80, 0.2);
+  color: #9be49f;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.table-controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #2f2f2f;
+  background: #121212;
+  color: #f5f5f5;
+  min-width: 300px;
+  font-size: 0.9rem;
+}
+
+/* .selection-dropdown {
+  min-width: 400px;
+} */
+
+.search-input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+@media (max-width: 600px) {
+  .table-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .table-controls {
+    flex-direction: column;
+  }
+
+  .search-input {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.page-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.empty {
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-text {
+  color: #ffb4a2;
+  font-size: 0.85rem;
+}
+
+/* branding button */
+
+.bodyDiv {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-image: linear-gradient(111.12652743313527deg, rgba(65, 65, 65, 1) 5.862658183316139%, rgba(0, 0, 0, 1));
+  height: auto;
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  right: -70px;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  border: none;
+  padding: 13px 25px;
+  background-color: black;
+  color: rgba(103, 109, 115, .2);
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: 2;
+  border-radius: .2rem;
+  overflow: hidden;
+  transition: color 1s;
+
+}
+
+.button:hover {
+  color: white;
+  filter: none;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -99.2%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #06e3fa, transparent);
+  opacity: .4;
+  overflow: hidden;
+  z-index: -2;
+  transform: skewX(-5deg);
+  filter: brightness(120%);
+  transition: all, .5s;
+}
+
+.button:hover:after {
+  left: 100%;
+
+}
+
+.text {
+  filter: blur(1px);
+}
+
+.button:hover .text {
+  filter: none;
+}
+
+.border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 14px 32px;
+  border-radius: .4rem;
+  z-index: 1;
+  background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #fad648);
+  filter: brightness(120%) blur(-100%);
+  background-size: 63%;
+  font-size: 1rem;
+
+}
+
+#kunal:hover+#kajal {
+  animation: animate1 3s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 1000%;
+  }
+}
