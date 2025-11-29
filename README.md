@@ -70,3 +70,6 @@ By default the React app expects the API at `http://localhost:5000/api`. Update 
 - Persist notifications or use a snackbar component.
 - Add automated tests for controllers and React components.
 
+## Screen shot of application
+
+<img width="1439" height="863" alt="Screenshot 2025-11-29 at 3 54 41 PM" src="https://github.com/user-attachments/assets/e694b9cc-36a3-4688-9d3e-cc77116a5c4e" />
